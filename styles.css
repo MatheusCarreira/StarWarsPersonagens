@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Trade Gothic Bold';
+    src: url('caminho/para/TradeGothic-Bold.woff2') format('woff2'),
+        url('caminho/para/TradeGothic-Bold.woff') format('woff'),
+        url('caminho/para/TradeGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-image: url('Png/wallpaper\ SW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 95vh;
+    background-color: #000;
+
+}
+
+h1 {
+    font-family: 'Trade Gothic Bold', 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: flex;
+    text-align: center;
+    padding-top: 170px;
+    padding-left: 824px;
+
+    text-shadow:
+        0 0 10px #ffff00,
+        0 0 15px #ffff00,
+        0 0 25px #ffcc00,
+        0 0 40px #ffcc00;
+    /* Animação para piscar */
+    animation: yellow-flicker 1.5s infinite alternate;
+}
+
+/* Animação para o efeito de piscar amarelo */
+@keyframes yellow-flicker {
+    0% {
+        text-shadow:
+            0 0 20px #ffff00,
+            0 0 20px #ffff00,
+            0 0 25px #ffcc00,
+            0 0 40px #ffcc00;
+    }
+
+    100% {
+        text-shadow:
+            0 0 3px #ffff00,
+            0 0 7px #ffff00,
+            0 0 15px #ffcc00,
+            0 0 20px #ffcc00;
+    }
+}
+
+.btn1,
+.btn2 {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.btn1 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border: 0px;
+    text-shadow:
+        0 0 5px #005f00,
+        0 0 10px #005f00,
+        0 0 15px #00ccff,
+        0 0 20px #00ccff;
+    box-shadow:
+        0 0 40px #005f00,
+        0 0 60px #00ccff;
+    animation: green-blue-flicker 1.5s infinite alternate;
+}
+
+.btn1:hover {
+    background-color: #0099cc;
+    text-shadow:
+        0 0 10px #00ff00,
+        0 0 15px #00ff00,
+        0 0 20px #00ccff,
+        0 0 25px #00ccff;
+    box-shadow:
+        0 0 35px #00ff00,
+        0 0 45px #00ccff;
+}
+
+@keyframes green-blue-flicker {
+    0% {
+        text-shadow:
+            0 0 10px #00ff00,
+            0 0 15px #00ff00,
+            0 0 20px #00ccff,
+            0 0 25px #00ccff;
+        box-shadow:
+            0 0 40px #00ff00,
+            0 0 50px #00ccff;
+    }
+
+    100% {
+        text-shadow:
+            0 0 3px #00ff00,
+            0 0 7px #00ff00,
+            0 0 10px #00ccff,
+            0 0 15px #00ccff;
+        box-shadow:
+            0 0 5px #00ff00,
+            0 0 10px #00ccff;
+    }
+}
+
+
+
+.btn2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border: 0px;
+    text-shadow:
+        0 0 5px #ff6200,
+        0 0 10px #ff6200,
+        0 0 15px #ff0505,
+        0 0 20px #ff0505;
+    box-shadow:
+        0 0 40px #ff6200,
+        0 0 60px #ff0505;
+    animation: orange-bloodred-flicker-btn 1.5s infinite alternate;
+}
+
+.btn2:hover {
+    background-color: #cc4b00;
+    text-shadow:
+        0 0 10px #ff6200,
+        0 0 15px #ff6200,
+        0 0 20px #ff0505,
+        0 0 25px #ff0505;
+    box-shadow:
+        0 0 35px #ff6200,
+        0 0 45px #ff0505;
+}
+
+@keyframes orange-bloodred-flicker-btn {
+    0% {
+        text-shadow:
+            0 0 10px #ff6200,
+            0 0 15px #ff6200,
+            0 0 20px #ff0505,
+            0 0 25px #ff0505;
+        box-shadow:
+            0 0 40px #ff6200,
+            0 0 50px #ff0505;
+    }
+
+    100% {
+        text-shadow:
+            0 0 3px #ff6200,
+            0 0 7px #ff6200,
+            0 0 10px #ff0505,
+            0 0 15px #ff0505;
+        box-shadow:
+            0 0 5px #ff6200,
+            0 0 10px #ff0505;
+    }
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 72px;
+    gap: 10px;
+}
+
+button,
+a {
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Trade Gothic Bold', 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.icone {
+    width: 30px;
+    height: auto;
+    margin-right: 6px;
+    object-fit: contain;
+}
+
+.botoes button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botoes button:hover {
+    transform: scale(1.05);
+}
+
+.botoes a {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botoes a:hover {
+    transform: scale(1.05);
+}
+
+.botoes button.ativo {
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.8);
+    transform: scale(1.08);
+    border: 2px solid gold;
+}
